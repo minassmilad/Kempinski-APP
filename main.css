@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  background-color: white;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.main-dir {
+  position: absolute !important;
+}
+
+.section {
+  position: relative;
+}
+
+.section .main-heading {
+  text-align: center;
+}
+
+.section .main-heading h2 {
+  font-weight: normal;
+  position: relative;
+  margin: 70px 0px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.section .main-heading h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -29px;
+  width: 120px;
+  height: 2px;
+  background-color: #333;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.section .main-heading h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -38px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.section .main-heading p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 2;
+  max-width: 550px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio .container-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 15px;
+}
+.portfolio .container-box .box {
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  margin-top: 20px;
+}
+.box-absolute {
+  position: absolute;
+}
+.box-border {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .portfolio .container-box .box {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1199px) {
+  .portfolio .container-box .box {
+    -ms-flex-preferred-size: 18%;
+    flex-basis: 12%;
+  }
+}
+
+.portfolio .container-box .box img {
+  max-width: 100%;
+}
+
+.portfolio .container-box .box .caption {
+  width: 100%;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background-color: #3897b9;
+  padding: 10px;
+  text-align: center;
+}
+
+.portfolio .container-box .box .caption h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.portfolio .container-box .box:hover .caption {
+  bottom: 0px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background-color: #237693;
+}
+
+.portfolio .container-box .box:hover img {
+  -webkit-transform: rotate(3deg) scale(1.1);
+  transform: rotate(3deg) scale(1.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.pdf-file{
+  padding-top: 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+.pdf-file:hover{
+    color: #e4cdb6;
+}
+
+.three a {
+  background-color: black;
+}
+.three a .caption {
+  background-color: hsl(39, 100%, 85%);
+}
